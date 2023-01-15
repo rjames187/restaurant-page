@@ -1,3 +1,5 @@
+import { selectTab } from "./index"
+
 const createNav = () => {
     const nav = document.createElement('nav')
 
@@ -8,7 +10,11 @@ const createNav = () => {
     const right = document.createElement('div')
     ;['home', 'menu', 'contact'].forEach(e => {
         const tab = document.createElement('div')
-        tab.innerHTML = e
+        tab.innerHTML = e.charAt(0).toUpperCase() + e.slice(1)
+        tab.setAttribute('id', `nav-${e}`)
+        tab.addEventListener('click', () => {
+            selectTab(e)
+        })
         right.appendChild(tab)
     })
     nav.appendChild(right)
