@@ -6,7 +6,7 @@ const createMenuItem = (image, name, price, description) => {
     }
 }
 
-menuData.push(createMenuItem('breadwine.jpeg', 'Bread and Wine', '$3.99', 'Bread dipped in wine with a side of grapes'))
+menuData.push(createMenuItem('breadwine.jpg', 'Bread and Wine', '$3.99', 'Bread dipped in wine with a side of grapes'))
 menuData.push(createMenuItem('epityrum.jpeg', 'Bread and Epityrum', '$3.99', 'Flat bread with olive relish and olives'))
 menuData.push(createMenuItem('goatcheese.jpg', 'Bread and Goat Cheese', '$3.99', 'Bread and goat cheese served with honey on the side'))
 
