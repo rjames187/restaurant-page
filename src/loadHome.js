@@ -1,3 +1,5 @@
+import { selectTab } from "./index"
+
 const loadHome = () => {
     const main = document.querySelector('main')
 
@@ -7,6 +9,9 @@ const loadHome = () => {
 
     const button = document.createElement('button')
     button.innerHTML = 'See Menu'
+    button.addEventListener('click', () => {
+        selectTab('menu')
+    })
     main.appendChild(button)
 }
 
