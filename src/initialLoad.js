@@ -36,6 +36,7 @@ const createFooter = () => {
 
     const link = document.createElement('a')
     link.innerHTML = 'View Source'
+    link.setAttribute('href', 'https://github.com/rjames187/restaurant-page')
     footer.appendChild(link)
 
     return footer

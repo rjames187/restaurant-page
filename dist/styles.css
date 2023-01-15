@@ -137,3 +137,11 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+footer > a {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
