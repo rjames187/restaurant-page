@@ -35,4 +35,14 @@ nav > div:last-child > div {
 
 #content > div {
     background-image: url('bg.jpg');
+    min-height: calc(100vh - 107px);
+}
+
+footer {
+    background-color: var(--dark-sky);
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
