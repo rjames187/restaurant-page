@@ -1,5 +1,11 @@
 import { initialLoad } from "./initialLoad"
 import { loadHome } from "./loadHome"
+import { loadMenu } from "./loadMenu"
+
+const wipeMain = () => {
+    const main = document.querySelector('main')
+    main.innerHTML = ''
+}
 
 const selectTab = (tab) => {
     const tabs = document.querySelectorAll('nav > div:last-child > div')
@@ -10,17 +16,23 @@ const selectTab = (tab) => {
     const selected = document.getElementById(`nav-${tab}`)
     selected.classList.toggle('selected')
 
+    wipeMain()
+
     switch (tab) {
         case 'home':
             loadHome()
+            break;
+        case 'menu':
+            loadMenu()
+            break;
         default:
             loadHome()
+            break;
     }
 }
 
 initialLoad()
 
 selectTab('home')
-loadHome()
 
 export { selectTab }
