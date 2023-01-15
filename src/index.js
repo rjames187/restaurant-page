@@ -1,6 +1,7 @@
 import { initialLoad } from "./initialLoad"
 import { loadHome } from "./loadHome"
 import { loadMenu } from "./loadMenu"
+import { loadContact } from "./loadContact"
 
 const wipeMain = () => {
     const main = document.querySelector('main')
@@ -21,13 +22,16 @@ const selectTab = (tab) => {
     switch (tab) {
         case 'home':
             loadHome()
-            break;
+            break
         case 'menu':
             loadMenu()
-            break;
+            break
+        case 'contact':
+            loadContact()
+            break
         default:
             loadHome()
-            break;
+            break
     }
 }
 

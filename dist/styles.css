@@ -74,7 +74,7 @@ h1 {
 
 button {
     background-color: var(--blue);
-    font-family: sans-serif;
+    font-family: "Fredoka One";
     font-size: 1.8rem;
     color: white;
     padding: 15px 25px 15px 25px;
@@ -123,6 +123,10 @@ h2 {
     color: transparent;
     background-clip: text;
     margin: 0px;
+}
+
+p {
+    color: white;
 }
 
 footer {
