@@ -6,7 +6,7 @@ const createNav = () => {
     nav.appendChild(left)
 
     const right = document.createElement('div')
-    ['home', 'menu', 'contact'].forEach(e => {
+    ;['home', 'menu', 'contact'].forEach(e => {
         const tab = document.createElement('div')
         tab.innerHTML = e
         right.appendChild(tab)

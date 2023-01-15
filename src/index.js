@@ -1,1 +1,6 @@
-console.log('hello world!')
+import { initialLoad } from "./initialLoad"
+import { loadHome } from "./loadHome"
+
+initialLoad()
+
+loadHome()

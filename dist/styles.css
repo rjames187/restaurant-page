@@ -2,8 +2,9 @@
 
 :root {
     font-family: "Fredoka One";
-    --blue: #93c5fd;
+    --blue: #60a5fa;
     --dark-sky: #0c4a6e;
+    --light-sky: #bae6fd;
 }
 
 body {
@@ -35,7 +36,44 @@ nav > div:last-child > div {
 
 #content > div {
     background-image: url('bg.jpg');
+    background-position: center;
+    background-attachment: fixed;
     min-height: calc(100vh - 107px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 650px;
+    background: rgb(0, 0, 0, 0.6);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+h1 {
+    background: linear-gradient(to right, var(--blue), var(--light-sky));
+    font-size: 3rem;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin: 0px;
+}
+
+button {
+    background-color: var(--blue);
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    padding: 15px 25px 15px 25px;
+    border-radius: 40px;
+    border: none;
 }
 
 footer {
